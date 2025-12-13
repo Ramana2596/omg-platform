@@ -9,7 +9,7 @@ export default function HomePage() {
           academia.
         </p>
         <a
-          href="https://project-game-beta.vercel.app/"
+          href="https://appomgplatform.vercel.app/"
           target="_blank"
           rel="noopener noreferrer"
           className="btn"
@@ -62,7 +62,7 @@ export default function HomePage() {
           <p><strong>Full Title:</strong> Operations Management Game (OMG)</p>
           <p>This simulation-based product acts as a comprehensive digital brochure, showcasing how participants manage operations, analyze performance, and drive business outcomes.</p>
           <p><strong>Target Users:</strong> Academia, Students, Professionals, Corporates, Practising Consultants</p>
-          <a href="https://project-game-beta.vercel.app/" target="_blank" rel="noopener noreferrer" className="btn">
+          <a href="https://appomgplatform.vercel.app/" target="_blank" rel="noopener noreferrer" className="btn">
             Request Demo
           </a>
         </div>
