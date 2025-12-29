@@ -1,114 +1,79 @@
-export default function HomePage() {
+import Link from "next/link";
+import ContactForm from "./components/ContactForm";
+
+export default function Home() {
   return (
-    <main>
-      <header className="hero">
-        <h1>OMG – Operations Management Business Simulation</h1>
-        <p>
-          A professional learning platform delivering experiential learning in
-          Business and Operations Management, built by industry experts and
-          academia.
-        </p>
-        <a
-          href="https://appomgplatform.vercel.app/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn"
-        >
-          Explore Product
-        </a>
-      </header>
-
-      <section>
-        <h2>Benefits & Key Features</h2>
-        <div className="grid">
-          <div className="card">
-            <h3>Experiential Learning</h3>
-            <p>Real-world operations decision-making through simulation.</p>
+    <>
+      <section id="hero" className="hero reveal">
+        <div className="container hero-inner">
+          <div className="hero-copy">
+            <h1>Learn by Doing, Guided by Professionals</h1>
+            <p className="lead">Experience operations management through immersive simulations and guided mentorship.</p>
+            <div className="hero-ctas">
+              <Link href="/products" className="btn outline">See Details</Link>
+              <a href="#contact" className="btn outline">Request Demo</a>
+            </div>
           </div>
-          <div className="card">
-            <h3>Industry Aligned</h3>
-            <p>Designed by experienced industry professionals and faculty.</p>
-          </div>
-          <div className="card">
-            <h3>Flexible Learning</h3>
-            <p>Classroom sessions, self-paced learning, and demo trials.</p>
+          <div className="hero-visual">
+            <img src="/omg-preview.png" alt="OMG simulation preview" />
           </div>
         </div>
       </section>
 
-      <section>
-        <h2>Trusted Partners</h2>
-        <p>We collaborate with teaching faculty, industry experts, and consultants to deliver practical and relevant learning experiences.</p>
-        <div className="grid">
-          <div className="card">
-            <h3>Faculty</h3>
-          </div>
-          <div className="card">
-            <h3>Industry Experts</h3>
-          </div>
-          <div className="card">
-            <h3>Consultants</h3>
-          </div>
-          <div className="card">
-            <h3>Institutions</h3>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <h2>Explore Our Product</h2>
-        <div className="product-section">
-          <h3>OMG – Operations Management Business Simulation</h3>
-          <p><strong>Full Title:</strong> Operations Management Game (OMG)</p>
-          <p>This simulation-based product acts as a comprehensive digital brochure, showcasing how participants manage operations, analyze performance, and drive business outcomes.</p>
-          <p><strong>Target Users:</strong> Academia, Students, Professionals, Corporates, Practising Consultants</p>
-          <a href="https://appomgplatform.vercel.app/" target="_blank" rel="noopener noreferrer" className="btn">
-            Request Demo
-          </a>
-        </div>
-      </section>
-
-      <section>
-        <h2>Who Is This For</h2>
-        <div className="grid">
-          <div className="card">
-            <h3>Academia & Institutions</h3>
-            <p>Simulation-led experiential learning for classrooms.</p>
-          </div>
-          <div className="card">
-            <h3>Professionals & Managers</h3>
-            <p>Strengthen operational and systems thinking.</p>
-          </div>
-          <div className="card">
-            <h3>Students & Consultants</h3>
-            <p>Practical exposure to real-world operations scenarios.</p>
-          </div>
-        </div>
-      </section>
-
-      <section>
+      <section id="how" className="how-works container reveal">
         <h2>How It Works</h2>
-        <div className="grid">
-          <div className="card">
-            <h3>Learning</h3>
-            <p>Online classroom sessions, self-paced learning, and demo trials.</p>
+        <div className="steps">
+          <div className="step">
+            <div className="step-icon">1</div>
+            <h3>Join</h3>
+            <p>Sign up and get instant access to course materials and simulations.</p>
           </div>
-          <div className="card">
-            <h3>Consultancy</h3>
-            <p>Technical and business growth consultancy to solve real organizational challenges.</p>
+          <div className="step">
+            <div className="step-icon">2</div>
+            <h3>Learn</h3>
+            <p>Engage in guided simulations and hands-on exercises with mentor feedback.</p>
           </div>
-          <div className="card">
-            <h3>Business Analytics</h3>
-            <p>Design and deploy your own operations management simulations powered by analytics.</p>
+          <div className="step">
+            <div className="step-icon">3</div>
+            <h3>Apply</h3>
+            <p>Apply learnings to real-world scenarios and measure outcomes.</p>
           </div>
         </div>
       </section>
 
-      <footer>
-        <h2>Contact</h2>
-        <p>Email: contact@omgplatform.com</p>
-        <p className="small">© 2025 OMG Learning Platform</p>
-      </footer>
-    </main>
+      <section id="audience" className="audience container reveal">
+        <h2>Who Is It For</h2>
+        <div className="audience-grid">
+          <div className="audience-item">Student<br /><small>Practical experience for coursework</small></div>
+          <div className="audience-item">Academia<br /><small>Adopt simulations for teaching</small></div>
+          <div className="audience-item">Professionals<br /><small>Upskill with applied learning</small></div>
+          <div className="audience-item">Corporates<br /><small>Team training &amp; licensing</small></div>
+        </div>
+      </section>
+
+      <section id="partners" className="partners container reveal">
+        <h2>Partners & Customers</h2>
+        <div className="logo-grid">
+          <div className="logo">ITEC</div>
+        </div>
+      </section>
+
+      <section id="customers" className="testimonials container reveal">
+        <h2>Current Customers</h2>
+        <div className="testimonials-grid">
+          <article className="testimonial">
+            <div className="t-logo">ITEC</div>
+            <p>"Engaging and practical — students love it."</p>
+            <div className="rating">★★★★★</div>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" className="contact container reveal">
+        <h2>Get in Touch / Request Demo</h2>
+        <p>Interested in a demo or partnership? Fill the form or email us.</p>
+        <ContactForm />
+      </section>
+    </>
   );
 }

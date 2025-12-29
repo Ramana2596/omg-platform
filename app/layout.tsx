@@ -1,5 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import TopNav from "./components/TopNav";
+import Footer from "./components/Footer";
+import PageTransition from "./components/PageTransition";
+import ScrollReveal from "./components/ScrollReveal";
+import HashScroller from "./components/HashScroller";
 
 export const metadata: Metadata = {
   title: "OMG – Operations Management Simulation | Experiential Learning Platform",
@@ -29,7 +34,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <TopNav />
+        <PageTransition />
+        <ScrollReveal />
+        <HashScroller />
+        <main className="page-wrapper">{children}</main>
+        <Footer />
+      </body>
     </html>
   );
 }
