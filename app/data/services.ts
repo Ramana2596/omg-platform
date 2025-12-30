@@ -8,7 +8,7 @@ export const services = [
             "Data-driven decision support",
             "Implementation roadmap and training",
         ],
-        cta: ["Contact Consultant", "Request Proposal"],
+        cta: ["Request Proposal"],
     },
     {
         slug: "custom-analytics",

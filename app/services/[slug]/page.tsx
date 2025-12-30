@@ -7,10 +7,12 @@ export default function ServiceDetail({ params }: { params: { slug: string } }) 
 
     return (
         <div className="container service-detail">
-            <header className="detail-header">
-                <h1>{svc.title}</h1>
-                <p className="muted">{svc.short}</p>
-            </header>
+            <div className="detail-header">
+                <div>
+                    <h1>{svc.title}</h1>
+                    <div className="detail-modes">{svc.short}</div>
+                </div>
+            </div>
 
             <section className="detail-body">
                 <h2>What we deliver</h2>
@@ -21,9 +23,8 @@ export default function ServiceDetail({ params }: { params: { slug: string } }) 
                 </ul>
 
                 <div className="detail-ctas">
-                    <button className="btn primary">Contact Consultant</button>
-                    <button className="btn outline">Request Proposal</button>
-                    <Link href="/services" className="btn">Back to Services</Link>
+                    <Link href="/#contact" className="btn primary">Contact Consultant</Link>
+                    <Link href="/services" className="btn primary">Back to Services</Link>
                 </div>
             </section>
         </div>

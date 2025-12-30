@@ -917,3 +917,7 @@ footer h2 {
     width: 100%;
   }
 }
+
+.service-actions {
+  display: contents;
+}
