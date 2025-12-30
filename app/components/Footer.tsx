@@ -6,8 +6,6 @@ export default function Footer() {
           <a href="/products">Products</a>
           <a href="/services">Services</a>
           <a href="#customers">Customers</a>
-          <a href="#support">Support</a>
-          <a href="#legal">Legal</a>
         </div>
         <div className="copyright">© {new Date().getFullYear()} OMG Platform</div>
       </div>

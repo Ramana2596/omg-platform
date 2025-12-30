@@ -32,7 +32,6 @@ export default function TopNav() {
           <Link href="/">Home</Link>
           <Link href="/products">Products</Link>
           <Link href="/services">Services</Link>
-          <Link href="/#about">About</Link>
           <Link href="/#contact">Contact</Link>
         </nav>
 
